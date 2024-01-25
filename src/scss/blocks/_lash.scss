@@ -1,0 +1,68 @@
+.lash-wrap {
+  border-top: 1px solid $accent;
+  border-bottom: 1px solid $accent;
+  padding: 47px 0 100px 0;
+  margin-bottom: 64px;
+  @media (max-width: 991px) {
+    padding: 47px 0 80px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 35px 0 80px 0;
+    margin-bottom: 35px;
+  }
+  @media (max-width: 576px) {
+    padding: 35px 0 70px 0;
+  }
+}
+
+.lash {
+  @include flex(row, flex-start, flex-start);
+  gap: 167px;
+  @media (max-width: 1200px) {
+    gap: 66px;
+  }
+  @media (max-width: 991px) {
+    gap: 24px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  &__card {
+    width: 400px;
+    @include flex(column, flex-start, flex-start);
+    gap: 29px;
+    @media (max-width: 991px) {
+      width: 321px;
+    }
+    @media (max-width: 768px) {
+      width: 430px;
+      gap: 20px;
+    }
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    p {
+      line-height: 150%;
+      @media (max-width: 991px) {
+        height: 84px;
+      }
+      @media (max-width: 768px) {
+        height: auto;
+      }
+    }
+    span {
+      color: $accent;
+      font-size: 25px;
+      font-weight: 400;
+    }
+    button {
+      width: 270px;
+    }
+  }
+}
