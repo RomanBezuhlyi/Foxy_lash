@@ -1,0 +1,45 @@
+.portfolio-wrap {
+  margin-bottom: 100px;
+  @media (max-width: 1200px) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 70px;
+  }
+}
+
+.portfolio {
+  h2 {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  &__pagination {
+    margin-top: 35px;
+    @include flex(row, center, center);
+    gap: 172px;
+    @media (max-width: 786px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.portdolio__btn-prev,
+.portdolio__btn-next {
+  @include flex(row, center, center);
+}
+.swiper-pagination {
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+.swiper-button-disabled {
+  opacity: 0.5 !important;
+}
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $accent !important;
+}
