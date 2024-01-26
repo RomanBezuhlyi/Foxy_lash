@@ -1,0 +1,99 @@
+.bundles-wrap {
+  margin-bottom: 100px;
+  @media (max-width: 1200px) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 70px;
+  }
+}
+
+.bundles {
+  h2 {
+    margin-bottom: 25px;
+  }
+  p {
+    width: 630px;
+    line-height: 150%;
+    margin-bottom: 30px;
+  }
+  &__content {
+    @include flex(row, center, flex-start);
+    width: 100%;
+    gap: 30px;
+  }
+  &__left,
+  &__right {
+    width: 50%;
+  }
+  &__right {
+    @include flex(column, flex-start, flex-start);
+    gap: 31px;
+    .right-list-title {
+      margin-bottom: 49px;
+    }
+    img {
+      width: 100%;
+      height: 241px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: $shadow;
+    }
+  }
+  &__list {
+    padding: 39px 100px 36px 37px;
+    border-radius: 5px;
+    border: 1px solid $accent;
+    background: $white;
+    box-shadow: $shadow;
+    h4 {
+      color: $accent;
+      font-family: Montserrat;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 6px;
+    }
+    p {
+      color: $accent;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 150%;
+      margin-bottom: 22px;
+    }
+    ul {
+      @include flex(column, flex-start, flex-start);
+      gap: 9px;
+      padding-left: 32px;
+    }
+    ul > li {
+      @include flex(row, space-between, center);
+      width: 100%;
+      color: $text;
+      font-family: $font-secondary;
+      font-size: 14px;
+      line-height: 150%;
+      &:not(:last-child) {
+        padding-bottom: 8px;
+        border-bottom: 1px solid $accent;
+      }
+      span {
+        color: $accent;
+        text-align: right;
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 150%;
+      }
+    }
+  }
+}
+.bundles__btns {
+  @include flex(row, center, center);
+  gap: 29px;
+  margin-top: 49px;
+  button {
+    width: 240px;
+  }
+}
