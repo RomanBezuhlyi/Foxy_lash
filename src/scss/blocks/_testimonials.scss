@@ -1,0 +1,97 @@
+.testimonials-wrap {
+  margin-bottom: 100px;
+  @media (max-width: 1200px) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 70px;
+  }
+}
+
+.testimonials {
+  &__title {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  &__text {
+    width: 303px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 34px;
+  }
+  &__pagination {
+    margin-top: 35px;
+    @include flex(row, center, center);
+    gap: 100px;
+    @media (max-width: 786px) {
+      margin-top: 20px;
+    }
+  }
+  &__slide {
+    @include flex(row, center, center);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 38px 38px 47px 38px;
+    border-radius: 5px;
+    background: $accent;
+    box-shadow: $shadow;
+    &-stars {
+      @include flex(row, center, center);
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+    h4 {
+      color: $white;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 38px;
+    }
+    p {
+      color: $white;
+      text-align: center;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 150%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      margin-bottom: 20px;
+    }
+    button {
+      display: none;
+      color: $white;
+      text-align: center;
+      font-family: $font-main;
+      font-weight: 400;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.portdolio__btn-prev,
+.portdolio__btn-next {
+  @include flex(row, center, center);
+}
+.swiper-pagination-2 {
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+.swiper-button-disabled {
+  opacity: 0.5 !important;
+}
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $accent !important;
+}
