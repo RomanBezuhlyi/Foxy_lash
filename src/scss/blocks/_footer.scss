@@ -1,0 +1,110 @@
+.footer-wrap {
+  border-top: 1px solid $accent;
+  padding: 38px 0 25px 0;
+  @media (max-width: 768px) {
+    padding: 35px 0 40px 0;
+  }
+}
+
+.footer {
+  @include flex(row, flex-start, flex-start);
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 33px;
+  }
+  &__logo {
+    width: 118px;
+    height: 118px;
+    margin-right: 82px;
+    @media (max-width: 991px) {
+      margin-right: 52px;
+    }
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+  }
+  &__wrap {
+    @include flex(row, flex-start, flex-start);
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 33px;
+    }
+  }
+  &__contact {
+    margin-right: 130px;
+    @media (max-width: 1200px) {
+      margin-right: 103px;
+    }
+    @media (max-width: 991px) {
+      margin-right: 60px;
+    }
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+    ul {
+      @include flex(column, flex-start, flex-start);
+      gap: 15px;
+    }
+    ul > li > a {
+      @include flex(row, flex-start, flex-start);
+      gap: 10px;
+      color: $text;
+      font-family: $font-secondary;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 150%;
+    }
+  }
+  &__hours {
+    margin-right: 130px;
+    @media (max-width: 1200px) {
+      margin-right: 0;
+    }
+    &-wrap {
+      @include flex(row, flex-start, flex-start);
+      gap: 15px;
+      ul {
+        @include flex(column, flex-start, flex-start);
+        gap: 5px;
+      }
+      ul > li {
+        @include flex(row, flex-start, flex-start);
+        gap: 7px;
+        color: $text;
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 150%;
+        span {
+          width: 87px;
+          color: $accent;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 170%;
+        }
+      }
+    }
+  }
+  &__connect {
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+    &-list {
+      @include flex(row, flex-start, center);
+      li > a {
+        @include flex(row, center, center);
+      }
+    }
+  }
+  h5 {
+    color: $accent;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+}
