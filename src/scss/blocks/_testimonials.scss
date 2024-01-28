@@ -22,7 +22,7 @@
   &__pagination {
     margin-top: 35px;
     @include flex(row, center, center);
-    gap: 100px;
+    gap: 70px;
     @media (max-width: 786px) {
       margin-top: 20px;
     }
@@ -82,16 +82,4 @@
 .swiper-pagination-2 {
   width: auto !important;
   left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-.swiper-button-disabled {
-  opacity: 0.5 !important;
-}
-.swiper-pagination-bullet {
-  width: 10px !important;
-  height: 10px !important;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: $accent !important;
 }
