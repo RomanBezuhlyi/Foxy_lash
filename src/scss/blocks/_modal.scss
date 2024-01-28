@@ -51,17 +51,24 @@
     font-family: $font-main;
     font-size: 16px;
     font-weight: 400;
-    font-style: italic;
     line-height: 150%;
     padding: 12px 35px;
     border-radius: 5px;
     border: 0.5px solid $accent;
     margin-bottom: 20px;
+    @include transition;
     @media (max-width: 768px) {
       width: 100%;
     }
     &::placeholder {
+      font-style: italic;
       color: #565656;
+    }
+    &:hover {
+      outline: 1px solid $accent;
+    }
+    &:focus {
+      outline: 1px solid $accent;
     }
   }
   textarea {
@@ -71,7 +78,6 @@
     font-family: $font-main;
     font-size: 16px;
     font-weight: 400;
-    font-style: italic;
     line-height: 150%;
     padding: 12px 35px;
     border-radius: 5px;
@@ -83,7 +89,14 @@
       height: 120px;
     }
     &::placeholder {
+      font-style: italic;
       color: #565656;
+    }
+    &:hover {
+      outline: 1px solid $accent;
+    }
+    &:focus {
+      outline: 1px solid $accent;
     }
   }
   button {
