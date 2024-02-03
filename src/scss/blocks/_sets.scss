@@ -1,5 +1,6 @@
 .set-wrap {
   padding: 50px 0 100px 0;
+  margin-bottom: 100px;
   border-bottom: 1px solid $accent;
   @media (max-width: 1200px) {
     margin-bottom: 80px;
@@ -27,7 +28,7 @@
     }
   }
   &__list {
-    @include flex(row, center, flex-start);
+    @include flex(row, flex-start, flex-start);
     gap: 30px;
     @media (max-width: 1200px) {
       gap: 21px;
@@ -74,10 +75,40 @@
         height: 105px;
         margin-bottom: 15px;
       }
+      .description.variant-2 {
+        height: 126px;
+        @media (max-width: 991px) {
+          height: 147px;
+        }
+      }
+      .price-wrap {
+        @include flex(row, flex-start, center);
+        gap: 68px;
+        margin-bottom: 20px;
+      }
+      .touch-price {
+        @include flex(row, flex-start, baseline);
+        gap: 7px;
+        span {
+          color: $accent;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 17px;
+          letter-spacing: 0%;
+        }
+        p {
+          color: $accent;
+          font-family: $font-main;
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+      }
       .price {
         @include flex(row, flex-start, flex-end);
         gap: 13px;
-        margin-bottom: 20px;
       }
       .old-price {
         color: $accent;
@@ -99,5 +130,27 @@
         }
       }
     }
+  }
+}
+.variant-services {
+  width: 370px;
+  @media (max-width: 1400px) {
+    width: 330px;
+  }
+  @media (max-width: 991px) {
+    width: 300px;
+  }
+  img {
+    width: 370px;
+    height: 220px;
+    @media (max-width: 1400px) {
+      width: 330px;
+    }
+    @media (max-width: 991px) {
+      width: 300px;
+    }
+  }
+  button {
+    width: 100%;
   }
 }
