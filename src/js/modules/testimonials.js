@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       if (content.style.webkitLineClamp) {
         content.style.webkitLineClamp = null;
-        button.textContent = "Read less";
+        button.textContent = "Hide";
       } else {
         content.style.webkitLineClamp = "8";
         button.textContent = "Read more";
