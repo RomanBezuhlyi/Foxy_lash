@@ -1,0 +1,98 @@
+.techniques-wrap {
+  padding-bottom: 100px;
+  border-bottom: 1px solid $accent;
+  margin-bottom: 55px;
+  @media (max-width: 991px) {
+    padding-bottom: 80px;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 45px;
+  }
+}
+.techniques {
+  h2 {
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 576px) {
+      padding-right: 50px;
+      margin-bottom: 30px;
+    }
+  }
+  &__list {
+    @include flex(row, flex-start, flex-start);
+    flex-wrap: wrap;
+    gap: 70px;
+    @media (max-width: 1200px) {
+      gap: 66px;
+    }
+    @media (max-width: 991px) {
+      gap: 30px;
+    }
+    &-item {
+      @include flex(column, flex-start, flex-start);
+      width: 500px;
+      height: 680px;
+      padding: 35px 50px 28px 50px;
+      border-radius: 5px;
+      border: 1px solid $accent;
+      background: $white;
+      box-shadow: $shadow;
+      @media (max-width: 1200px) {
+        width: 400px;
+        padding: 35px 32px 28px 33px;
+      }
+      @media (max-width: 991px) {
+        width: 320px;
+        height: 570px;
+        padding: 35px 20px 22px 20px;
+      }
+      @media (max-width: 768px) {
+        width: 430px;
+        height: 680px;
+        padding: 35px 32px 28px 33px;
+      }
+      @media (max-width: 576px) {
+        width: 100%;
+        height: 570px;
+        padding: 35px 20px 22px 20px;
+      }
+      h5 {
+        color: $accent;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      img {
+        object-fit: cover;
+        width: 400px;
+        height: 435px;
+        border-radius: 5px;
+        box-shadow: $shadow;
+        margin-bottom: 30px;
+        @media (max-width: 1200px) {
+          width: 335px;
+        }
+        @media (max-width: 991px) {
+          width: 280px;
+          height: 320px;
+          margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+          width: 365px;
+          height: 435px;
+          margin-bottom: 30px;
+        }
+        @media (max-width: 576px) {
+          width: 100%;
+          height: 330px;
+          margin-bottom: 10px;
+        }
+      }
+      p {
+        line-height: 150%;
+      }
+    }
+  }
+}
