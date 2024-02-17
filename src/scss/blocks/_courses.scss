@@ -1,0 +1,98 @@
+.courses-wrap {
+  padding-bottom: 55px;
+  border-bottom: 1px solid $accent;
+  margin-bottom: 100px;
+  @media (max-width: 991px) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 576px) {
+    padding-bottom: 45px;
+  }
+}
+.courses {
+  h2 {
+    margin-bottom: 50px;
+    @media (max-width: 576px) {
+      margin-bottom: 35px;
+    }
+  }
+  &__list {
+    @include flex(row, flex-start, flex-start);
+    gap: 85px;
+    flex-wrap: wrap;
+    @media (max-width: 1200px) {
+      gap: 50px;
+    }
+  }
+  &__list-item {
+    @include flex(column, flex-start, flex-start);
+    gap: 20px;
+    width: 478px;
+    @media (max-width: 1200px) {
+      width: 406px;
+    }
+    @media (max-width: 991px) {
+      width: 305px;
+    }
+    @media (max-width: 768px) {
+      width: 434px;
+    }
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+    h5 {
+      color: $accent;
+      font-size: 22px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    img {
+      width: 100%;
+      height: 328.564px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    p {
+      line-height: 150%;
+    }
+    span {
+      color: $accent;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    ul {
+      @include flex(column, flex-start, flex-start);
+      gap: 13px;
+    }
+    ul > li {
+      width: 331px;
+      @include flex(row, space-between, center);
+      color: $accent;
+      font-family: $font-secondary;
+      line-height: 150%;
+      text-transform: uppercase;
+    }
+    ul > li > div {
+      font-family: $font-main;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &--descr {
+      width: 350px;
+      text-transform: uppercase;
+    }
+    a {
+      width: 370px;
+      @media (max-width: 991px) {
+        width: 300px;
+      }
+      @media (max-width: 768px) {
+        width: 427px;
+      }
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+    }
+  }
+}
