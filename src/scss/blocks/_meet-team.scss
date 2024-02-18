@@ -11,6 +11,8 @@
     height: 685px;
     object-fit: cover;
     margin-bottom: 35px;
+    border-radius: 5px;
+    box-shadow: $shadow;
     @media (max-width: 991px) {
       width: 100%;
       margin-bottom: 30px;
