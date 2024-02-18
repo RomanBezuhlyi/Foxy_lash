@@ -51,6 +51,16 @@ button {
   box-shadow: $shadow;
   border: 1px solid $accent;
   @include transition;
+  &__phone-dark {
+    display: none;
+    opacity: 0;
+    @include transition;
+  }
+  &__phone-light {
+    display: block;
+    opacity: 1;
+    @include transition;
+  }
   @media (max-width: 1200px) {
     gap: 60px;
   }
@@ -58,6 +68,14 @@ button {
     color: $accent;
     background: $white;
     border: 1px solid $white;
+    .primary__phone-dark {
+      display: block;
+      opacity: 1;
+    }
+    .primary__phone-light {
+      display: none;
+      opacity: 0;
+    }
   }
   &:active {
     font-weight: 700;
